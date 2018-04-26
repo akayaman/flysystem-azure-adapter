@@ -10,7 +10,7 @@ use MicrosoftAzure\Storage\Blob\Internal\IBlob;
 use MicrosoftAzure\Storage\Blob\Models\BlobPrefix;
 use MicrosoftAzure\Storage\Blob\Models\BlobProperties;
 use MicrosoftAzure\Storage\Blob\Models\CopyBlobResult;
-use MicrosoftAzure\Storage\Blob\Models\CreateBlobOptions;
+use MicrosoftAzure\Storage\Blob\Models\CreateBlockBlobOptions;
 use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\ListBlobsResult;
 use MicrosoftAzure\Storage\Common\Exceptions\ServiceException;
@@ -369,11 +369,11 @@ class AzureAdapter extends AbstractAdapter
      *
      * @param Config $config
      *
-     * @return CreateBlobOptions
+     * @return CreateBlockBlobOptions
      */
     protected function getOptionsFromConfig(Config $config)
     {
-        $options = new CreateBlobOptions();
+        $options = new CreateBlockBlobOptions();
 
         foreach (static::$metaOptions as $option) {
             if (!$config->has($option)) {
