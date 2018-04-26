@@ -1,5 +1,5 @@
 {
-    "name": "futureoriented/flysystem-azure-adapter",
+    "name": "akayaman/flysystem-azure-adapter",
     "description": "Another Flysystem adapter for Windows Azure",
     "keywords": [
         "flysystem",
@@ -7,8 +7,8 @@
     ],
     "authors": [
         {
-            "name": "wbswjc",
-            "email": "me@wujunchao.com"
+            "name": "NAKAYAMA Atsushi",
+            "email": "anaka@yo.rim.or.jp"
         }
     ],
     "license": "MIT",
